@@ -18,12 +18,14 @@
 
 Jawab:
 
-#### Praktikum 1 
-Langkah 1
+### Praktikum 1 
+--- Langkah 1
+
 Ketik atau salin kode program berikut ke dalam fungsi main().
 ![Hasil Modifikasi Kode Program](/Pertemuan3/Praktikum1/langkah1.png)
 
-Langkah 2
+--- Langkah 2
+
 Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan!
 Jawab
 
@@ -31,7 +33,8 @@ Kode yang kamu tulis error karena penulisan keyword if dan else di Dart harus hu
 
 ![Hasil Modifikasi Kode Program](/Pertemuan3/Praktikum1/hasil1.png)
 
-Langkah 3
+--- Langkah 3
+
 ![Hasil Modifikasi Kode Program](/Pertemuan3/Praktikum1/langkah3.png)
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan if/else.
 Jawab
