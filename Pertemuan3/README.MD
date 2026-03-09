@@ -12,14 +12,15 @@
 
 ## Tugas Praktikum 
 
-## Soal 1
+### Soal 1
 
 1. Silakan selesaikan Praktikum 1 sampai 3, lalu dokumentasikan berupa screenshot hasil pekerjaan beserta penjelasannya!
 
 Jawab:
 
-### Praktikum 1 
+#### Praktikum 1 
 Langkah 1
+Ketik atau salin kode program berikut ke dalam fungsi main().
 ![Hasil Modifikasi Kode Program](/Pertemuan3/Praktikum1/langkah1.png)
 
 Langkah 2
@@ -42,3 +43,4 @@ Perbaikannya adalah tidak mendeklarasikan variabel test dua kali dalam satu scop
 ![Hasil Modifikasi Kode Program](/Pertemuan3/Praktikum1/hasil3.png)
 
 ### Praktikum 2
+Langkah 1
