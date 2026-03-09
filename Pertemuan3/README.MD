@@ -18,10 +18,11 @@
 
 Jawab:
 
-### Praktikum 1 
+#### Praktikum 1 
 --- Langkah 1
 
 Ketik atau salin kode program berikut ke dalam fungsi main().
+
 ![Hasil Modifikasi Kode Program](/Pertemuan3/Praktikum1/langkah1.png)
 
 --- Langkah 2
