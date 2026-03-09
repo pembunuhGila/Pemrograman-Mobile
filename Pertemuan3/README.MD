@@ -131,7 +131,7 @@ Jawab
 
 Kodingan
 
-![alt text](soal2.png)
+![alt text](Soal2.png)
 
 Output
 
