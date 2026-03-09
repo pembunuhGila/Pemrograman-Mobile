@@ -19,6 +19,7 @@
 Jawab:
 
 #### - Praktikum 1 
+
 - Langkah 1
 
 Ketik atau salin kode program berikut ke dalam fungsi main().
@@ -47,6 +48,7 @@ Perbaikannya adalah tidak mendeklarasikan variabel test dua kali dalam satu scop
 ![Hasil Modifikasi Kode Program](/Pertemuan3/Praktikum1/hasil3.png)
 
 #### - Praktikum 2
+
 - Langkah 1
 
 Ketik atau salin kode program berikut ke dalam fungsi main().
@@ -83,6 +85,7 @@ Ketika kode dijalankan tidak terjadi error. Program akan menjalankan perulangan 
 Kemudian program menjalankan perulangan do-while yang akan mencetak nilai counter dari 33 sampai 76, karena kondisi perulangannya adalah counter < 77. Perulangan do-while akan terus berjalan selama kondisi masih terpenuhi dan nilai counter selalu bertambah 1 setiap iterasi.
 
 #### - Praktikum 3
+
 - Langkah 1
 
 Ketik atau salin kode program berikut ke dalam fungsi main().
@@ -90,6 +93,7 @@ Ketik atau salin kode program berikut ke dalam fungsi main().
 ![Hasil Modifikasi Kode Program](/Pertemuan3/Praktikum2/langkah1.png)
 
 - Langkah 2
+
 Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
 Jawab
 
@@ -119,3 +123,19 @@ Perbaikannya adalah menuliskan if dan else if dengan huruf kecil, menggunakan na
 
 Setelah diperbaiki, program akan melakukan perulangan dari 10 sampai sebelum 27, namun ketika nilai index = 21 perulangan akan berhenti (break). Perintah continue digunakan untuk melewati iterasi tertentu tanpa menjalankan print, meskipun pada rentang ini kondisi tersebut tidak terpenuhi.
 
+### Soal 2
+
+Buatlah sebuah program yang dapat menampilkan bilangan prima dari angka 0 sampai 201 menggunakan Dart. Ketika bilangan prima ditemukan, maka tampilkan nama lengkap dan NIM Anda.
+
+Jawab
+
+Kodingan
+
+![alt text](soal2.png)
+
+Output
+
+![alt text](hasilsoal2.png)
+
+Program melakukan perulangan dari 2 sampai 201.
+Setiap angka dicek apakah habis dibagi oleh angka lain selain 1 dan dirinya sendiri. Jika tidak habis dibagi, maka angka tersebut adalah bilangan prima, lalu program akan menampilkan angka tersebut beserta nama dan NIM.
