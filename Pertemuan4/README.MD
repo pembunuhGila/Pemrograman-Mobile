@@ -14,10 +14,6 @@
 
 #### - Praktikum 1 
 
-- Langkah 1
-
-Ketik atau salin kode program berikut ke dalam void main().
-
 - Langkah 2
 
 Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan!
@@ -30,6 +26,7 @@ Saat kode dijalankan, program membuat sebuah list yang berisi tiga angka yaitu [
 Ubah kode pada langkah 1 menjadi variabel final yang mempunyai index = 5 dengan default value = null. Isilah nama dan NIM Anda pada elemen index ke-1 dan ke-2. Lalu print dan capture hasilnya.
 
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki.
+Jawab
 
 Indeks 0, 3, dan 4 masih bernilai `null` sebagai nilai awal, sementara indeks 1 berisi "Rachmad Zaki Setyawan" dan indeks 2 berisi "244107060107", di mana `print(list)` menampilkan seluruh isi array, sedangkan `print(list[1])` dan `print(list[2])` hanya menampilkan elemen pada indeks tertentu.
 
@@ -103,12 +100,9 @@ Apa yang terjadi ? Jika terjadi error, silakan perbaiki.
 Tambahkan variabel list berisi NIM Anda menggunakan Spread Operators. Dokumentasikan hasilnya dan buat laporannya!
 
 Jawab
-
- Di sini list berisi nilai null di dalamnya. Saat dimasukkan ke list3, digunakan ...?list. Tanda ...? ini artinya spread operator yang aman terhadap null. Jadi kalau list itu null, program tidak error. Tapi karena list di sini tidak null (hanya isinya ada null), maka semua isi tetap dimasukkan ke list3. Hasilnya list3 berisi 0, 1, 2, dan null dengan panjang 4.
-
 ![Hasil Modifikasi Kode Program](/Pertemuan4/Praktikum4/4.2.png)
 
-Menambahkan nama dan nim
+ Di sini list berisi nilai null di dalamnya. Saat dimasukkan ke list3, digunakan ...?list. Tanda ...? ini artinya spread operator yang aman terhadap null. Jadi kalau list itu null, program tidak error. Tapi karena list di sini tidak null (hanya isinya ada null), maka semua isi tetap dimasukkan ke list3. Hasilnya list3 berisi 0, 1, 2, dan null dengan panjang 4.
 
 ![alt text](/Pertemuan4/Praktikum4/4.3.png)
 
