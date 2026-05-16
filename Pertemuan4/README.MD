@@ -69,7 +69,7 @@ Kode berjalan sukses tanpa eror.
 
 Tambahkan kode program berikut di dalam for-loop, lalu coba eksekusi (Run) kode Anda.
 
-![Hasil Modifikasi Kode Program](/Pertemuan4/Praktikum3/3.2.png.png)
+![Hasil Modifikasi Kode Program](/Pertemuan4/Praktikum3/3.2.png)
 
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki.
 
@@ -80,7 +80,9 @@ Jawab
 Program tersebut berhasil dijalankan tanpa error dan menampilkan isi dari dua Map, yaitu gifts dan nobleGases. Map gifts berisi pasangan key bertipe String dengan value campuran (String dan integer), sedangkan nobleGases berisi key integer dengan value juga campuran. Setelah itu, kode membuat Map baru (mhs1 dan mhs2), tetapi tidak digunakan lebih lanjut. Perubahan nilai yang dilakukan tetap terjadi pada Map awal
 
 Menambahkan nama dan nim
+
 ![alt text](/Pertemuan4/Praktikum3/3.3.png)
+
 ![alt text](/Pertemuan4/Praktikum3/output3.png)
 
 #### - Praktikum 4
@@ -107,6 +109,7 @@ Jawab
 ![Hasil Modifikasi Kode Program](/Pertemuan4/Praktikum4/4.2.png)
 
 Menambahkan nama dan nim
+
 ![alt text](/Pertemuan4/Praktikum4/4.3.png)
 
 - Langkah 4
