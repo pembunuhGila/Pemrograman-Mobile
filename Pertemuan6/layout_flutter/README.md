@@ -122,3 +122,10 @@ body: Column(
 
 Output:
 ![](images/Praktikum2.png)
+
+## Praktikum 3
+
+Pada langkah ini dibuat widget textSection menggunakan Container yang berisi widget Text. Container diberikan padding sebesar 32 piksel pada seluruh sisi agar teks tidak menempel pada tepi layar dan lebih mudah dibaca. Properti softWrap: true digunakan agar teks dapat berpindah ke baris berikutnya secara otomatis ketika panjang teks melebihi lebar layar. Widget ini digunakan untuk menampilkan deskripsi atau informasi mengenai tempat wisata yang ditampilkan pada aplikasi.
+
+Output:
+![](images/Prak3.png)
