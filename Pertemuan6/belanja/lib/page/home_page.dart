@@ -1,48 +1,109 @@
 import 'package:flutter/material.dart';
-import '../models/item.dart';
+import 'package:belanja/models/item.dart';
+import 'package:go_router/go_router.dart';                     // Import GoRouter for navigation
 
-class HomePage extends StatelessWidget {
-  HomePage({super.key});
-
+class MyHomePage extends StatelessWidget {
   final List<Item> items = [
-    Item(name: 'Sugar', price: 5000),
-    Item(name: 'Salt', price: 2000),
+    Item(
+      name: 'Sabun Batang', 
+      price: 3000,
+      foto: 'images/sabun_batang.png',
+      stok: 10,
+      rating: 4.5
+    ),
+    Item(
+      name: 'Royco', 
+      price: 500,
+      foto: 'images/Royco.png',
+      stok: 15,
+      rating: 4.2
+    ),
+    Item(
+      name: 'Minyak 1 Liter', 
+      price: 20000,
+      foto: 'images/Minyak.png',
+      stok: 15,
+      rating: 4.2
+    ),
+    Item(
+      name: 'Shampoo', 
+      price: 3500,
+      foto: 'images/Shampoo.png',
+      stok: 15,
+      rating: 4.2
+    ),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Daftar Belanja'),
+        title: Text('Rachmad Zaki Setyawan - 244107060107'),
+        backgroundColor: Colors.blue,
       ),
       body: Container(
-        margin: const EdgeInsets.all(8),
-        child: ListView.builder(
-          padding: const EdgeInsets.all(8),
+        margin: EdgeInsets.all(8),
+        child: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: 0.75,
+            crossAxisSpacing: 8,
+            mainAxisSpacing: 8,
+          ),
+          padding: EdgeInsets.all(8),
           itemCount: items.length,
           itemBuilder: (context, index) {
             final item = items[index];
-
             return InkWell(
               onTap: () {
-                Navigator.pushNamed(
-                  context,
-                  '/item',
-                );
+                context.push('/item', extra: item);   // Navigasi dengan GoRouter
               },
               child: Card(
                 child: Container(
-                  margin: const EdgeInsets.all(8),
-                  child: Row(
+                  margin: EdgeInsets.all(8),
+                  child: Column(
                     children: [
                       Expanded(
-                        child: Text(item.name),
+                        flex : 3,                                // 60% untuk gambar
+                        child: Hero(                             // Hero Anmation
+                          tag: 'product_${item.name}',          // Tag unik
+                          child: Container(
+                            width: double.infinity,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(8),
+                                topRight: Radius.circular(8),
+                              ),
+                              child: Image.asset(               // Gambar produk
+                                item.foto,                      // Foto
+                                fit: BoxFit.cover,
+                              ),
+                            )
+                          ),
+                        )
                       ),
                       Expanded(
-                        child: Text(
-                          item.price.toString(),
-                          textAlign: TextAlign.end,
-                        ),
+                        flex: 2,                                  // 40% untuk info
+                        child: Padding(
+                          padding : EdgeInsets.only(left: 8),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(item.name,),                    // ← nama produk
+                              Text('Rp ${item.price}',),          // ← harga produk
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(Icons.star, color: Colors.orange, size: 14),
+                                  SizedBox(width: 2),
+                                  Text(item.rating.toString()),   //rating produk
+                                ],
+                              ),
+                              Text('Stok: ${item.stok}'),         // ← STOK
+                            ],
+                          ),
+                        )
                       ),
                     ],
                   ),

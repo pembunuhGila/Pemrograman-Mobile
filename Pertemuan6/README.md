@@ -142,3 +142,11 @@ Output:
 
 Output
 ![](layout_flutter/images/5.2.png)
+
+## Tugas Praktikum 2
+
+Output:
+![](belanja/images/output1.png)
+
+Output
+![](belanja/images/Output2.png)

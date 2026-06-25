@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
-import 'page/home_page.dart';
-import 'page/item_page.dart';
+import 'package:belanja/route/go_router.dart';   // Import go_router
 
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp.router(              
+      title: 'Belanja App - Go Router',
       debugShowCheckedModeBanner: false,
-      initialRoute: '/',
-      routes: {
-        '/': (context) => HomePage(),
-        '/item': (context) => const ItemPage(),
-      },
-    ),
-  );
+      routerConfig: AppRouter.router,       // konfigurasi router dari AppRouter
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        useMaterial3: true,
+      ),
+    );
+  }
 }
