@@ -129,3 +129,10 @@ Pada langkah ini dibuat widget textSection menggunakan Container yang berisi wid
 
 Output:
 ![](images/Prak3.png)
+
+## Praktikum 4
+
+Output:
+![](images/outputLake.png)
+
+## Praktikum 5

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -74,8 +73,14 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter layout demo'),
         ),
-        body: Column(
+        body: ListView(
           children: [
+            Image.asset(
+              'images/lake.png',
+              width: 600,
+              height: 240,
+              fit: BoxFit.cover,
+            ),
             titleSection,
             buttonSection,
             textSection,
