@@ -7,27 +7,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ================= TITLE SECTION =================
     Widget titleSection = Container(
-      // ===== SOAL 3 =====
-      // Memberikan padding 32 piksel di seluruh sisi Container
       padding: const EdgeInsets.all(32),
-
       child: Row(
         children: [
-          // ===== SOAL 1 =====
-          // Column diletakkan di dalam Expanded
           Expanded(
             child: Column(
-              // ===== SOAL 1 =====
-              // Posisi kolom berada di awal (rata kiri)
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // ===== SOAL 2 =====
-                // Teks pertama dibungkus Container
                 Container(
-                  // Padding bawah 8 piksel
                   padding: const EdgeInsets.only(bottom: 8),
-
                   child: const Text(
                     'Wisata Gunung di Batu',
                     style: TextStyle(
@@ -35,9 +25,6 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
-
-                // ===== SOAL 2 =====
-                // Warna teks menjadi abu-abu
                 const Text(
                   'Batu, Malang, Indonesia',
                   style: TextStyle(
@@ -47,33 +34,67 @@ class MyApp extends StatelessWidget {
               ],
             ),
           ),
-
-          // ===== SOAL 3 =====
-          // Ikon bintang warna merah
           const Icon(
             Icons.star,
             color: Colors.red,
           ),
-
-          // ===== SOAL 3 =====
-          // Teks "41"
           const Text('41'),
         ],
       ),
     );
 
+    // ================= BUTTON SECTION =================
+    Color color = Theme.of(context).primaryColor;
+
+    Widget buttonSection = Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        _buildButtonColumn(color, Icons.call, 'CALL'),
+        _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
+        _buildButtonColumn(color, Icons.share, 'SHARE'),
+      ],
+    );
+    
+
     return MaterialApp(
-      title: 'Flutter layout: Nama dan NIM Anda',
+      title: 'Flutter layout',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Flutter layout demo'),
         ),
-
-        // Mengganti Hello World dengan titleSection
-        body: Center(
-          child: titleSection,
+        body: Column(
+          children: [
+            titleSection,
+            buttonSection,
+          ],
         ),
       ),
+    );
+  }
+
+  // ================= METHOD BUTTON =================
+  Column _buildButtonColumn(
+      Color color, IconData icon, String label) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Icon(
+          icon,
+          color: color,
+        ),
+        Container(
+          margin: const EdgeInsets.only(top: 8),
+          child: Text(
+            label,
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w400,
+              color: color,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

@@ -96,3 +96,29 @@ Pada soal ini Container utama diberikan padding sebesar 32 piksel pada seluruh s
 Output:
 ![](images/Soal123.png)
 
+## Praktikum 2
+
+Langkah 1
+    Column _buildButtonColumn(...)
+Letaknya paling bawah dalam class MyApp.
+
+Langkah 2
+    Color color = Theme.of(context).primaryColor;
+Widget buttonSection = Row(...)
+Letaknya setelah titleSection.
+
+Langkah 3
+Ganti:
+body: Center(
+  child: titleSection,
+),
+menjadi:
+body: Column(
+  children: [
+    titleSection,
+    buttonSection,
+  ],
+),
+
+Output:
+![](images/Praktikum2.png)
